@@ -1,0 +1,27 @@
+@media (min-width:640px){
+
+    .trending-boxes{
+        height: 70vh;
+    }
+
+    .course-box{
+        border-radius: 15px;
+        height: 80%;
+    }
+
+    .rating{
+        font-size: 1vw;
+    }
+
+    .ac-inner-div{
+        font-size: 2vw;
+    }
+
+    .last-points{
+        font-size: 2vw;
+    }
+    
+    footer{
+        height: 55vh;
+    }
+}

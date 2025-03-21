@@ -1,0 +1,61 @@
+/*1280px*/
+
+@media(min-width: 1280px){
+
+    .logo img{
+        height: 70%;
+        width: 40%;
+        transition: 0.3s all ease-in-out;
+    
+        &:hover{
+            rotate: -7deg;
+        }
+    }
+
+    .hero-image{
+        height: 80vh;
+    }
+
+    .hero-info{
+        height: 60vh;
+    }
+
+    .writing h2{
+        font-weight: bolder;
+        font-size: 3vw;
+    }
+
+    .buttons{
+        width: 65%;
+        /* background-color: bisque; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .trending-boxes{
+        height: 200vh;
+        /* background-color: aqua; */
+    }
+
+    .course-box{
+        border-radius: 15px;
+        height: 90%;
+        /* background-color: red; */
+        border: 2px solid #1e2f97;
+    }
+
+    .achievement{
+        height: 25vh;
+    }
+
+    .trending-boxes #arrow-btn{
+        display: block;
+        right: 20px
+    }
+
+    .foot-info .box1, .box2{
+        font-size: 0.7vw;
+    }
+    
+}

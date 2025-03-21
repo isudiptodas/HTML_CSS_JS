@@ -1,0 +1,186 @@
+/* 1024px */
+
+@media (min-width: 1024px){
+
+    .nav{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logo{
+        width: 15%;
+        /* background-color: beige; */
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .links{
+        display: block;
+        /* background-color: aquamarine; */
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .links a{
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        transition: 0.3s all ease-in-out;
+
+        &:hover{
+            font-weight: 700;
+        }
+    }
+
+    .search{
+        display: block;
+        /* background-color: darkgoldenrod; */
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+    }
+
+    .search input{
+        padding: 1vw 3vw;
+        border-radius: 50px;
+        border: 1px solid black;
+    }
+
+    .search button{
+        padding: 0.5vw 1vw;
+        background-color: #1aa7ec;
+        border-radius: 50px;
+        color: white;
+        border: none;
+        transition: 0.2s all ease-in-out;
+
+        &:hover{
+            background-color: #1e2f97;
+        }
+    }
+
+    .hero-section{
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        padding: 0 4vw;
+    }
+
+    .buttons button{
+        padding: 1vw 3vw;
+    }
+
+    .buttons{
+        width: 65%;
+        /* background-color: bisque; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .main-heading{
+        height: 15vh;
+        width: 100%;
+        /* background-color: aqua; */
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 4vw;
+    }
+
+    .main-boxes{
+        height: 45vh;
+        width: 100%;
+        /* background-color: rebeccapurple; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+    
+    .main-boxes .inner-box{
+        height: 30%;
+        width: 20%;
+        background-color: rgb(215, 215, 215);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vw;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+        transition: 0.2s all ease-in-out;
+    
+        &:hover{
+            color: white;
+            background-color: black;
+        }
+    }
+
+    .trending-heading h4{
+        font-size: 2vw;
+    }
+
+    .trending-heading p{
+        font-size: 1vw;
+        
+    }
+
+    .trending-boxes{
+        height: 2px;
+        /* background-color: aqua; */
+    }
+
+    .course-box{
+        border-radius: 15px;
+        height: 90%;
+        /* background-color: red; */
+        border: 2px solid #1e2f97;
+    }
+
+    .rating{
+        font-size: 1vw;
+    }
+
+    .trending-boxes #arrow-btn{
+        display: block;
+        right: 20px
+    }
+
+    .last-info{
+        flex-direction: row;
+        gap: 4vw;
+    }
+
+    .last-box1{
+        width: 40%;
+    }
+
+    .last-points p{
+        font-size: 1.5vw;
+    }
+
+    .last-heading h4{
+        font-size: 2vw;
+    }
+
+    footer{
+        height: 90vh;
+    }
+
+    .foot-info .box1, .box2{
+        font-size: 0.7vw;
+    }
+
+    .form input{
+        font-size: 0.6vw;
+        border-radius: 10px;
+    }
+}
