@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.frnd-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+.frnd-list{
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+
+.main{
+    height: 100vh;
+    width: 100%;
+    background-image: url("OggyHouse.jpg");
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.main .frnd-list{
+    height: 70%;
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    z-index: 9;
+    position: absolute;
+    border-radius: 20px;
+    overflow: auto;
+    display: none;
+}
+
+.main .frnd-list .list{
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    justify-content: first baseline;
+    gap: 15px;
+    padding: 5px 10px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.main .frnd-list .list button{
+   align-items: flex-start;
+   padding: 10px 10px;
+   border-radius: 5px;
+   border: none;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   cursor: pointer;
+   border: 1px solid black;
+   font-weight: 700;
+   transition: padding 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.2s ease-in-out;
+}
+
+.main .frnd-list .list button:hover{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.list h4{
+    font-size: 10px;
+}
+
+.list1 i{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.list1{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-bottom: 2px solid black; */
+    border-width: 60%;
+}
+
+.list img{
+    height: 7%;
+    width: 15%;
+    border-radius: 50%;
+    margin-bottom: 2px;
+    object-fit: cover;
+}
+
+.list:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.box{
+    height: 70%;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0.42);
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box .image{
+    margin-top: 25px;
+    height: 60%;
+    margin-bottom: 5px;
+}
+
+.box .image img{
+    height: 100%;
+    width: 60%;
+    /* position: relative; */
+    border-radius: 10px;
+}
+
+.box .status{
+    /* border: 1px solid red; */
+    margin-bottom: 10px;
+}
+
+.box .name h3{
+    font-size: 30px;
+}
+
+.box .status h5{
+    font-size: 10px;
+    color: red;
+}
+
+.box .btn .addFrnd{
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    border: 1px solid black;
+    font-weight: 700;
+    margin-bottom: 15px;
+    transition: padding 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.2s ease-in-out;
+}
+
+.box .btn .addFrnd:hover{
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.box .view-frnd-list{
+    cursor: pointer;
+    font-weight: bolder;
+    color: rgb(9, 9, 216);
+    display: none;
+    position: relative;
+}
+
+.box .view-frnd-list::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    left: 50%;
+    background: #007bff;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.box .view-frnd-list:hover::after {
+    width: 100%;
+    left: 50%;
+    background-color: #007bff;
+}
