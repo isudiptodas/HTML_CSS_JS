@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="https://th.bing.com/th/id/R.324182d05f7d0b5da1c5c5ba59094287?rik=0exjOOECBFvCYw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fpng-eat-circle-dining-eat-eating-food-orange-restaurant-icon-512.png&ehk=5Kfs%2b%2bo8Rnf3JpMc%2bOOuYAG1BV59YVnFy%2fWukoChApo%3d&risl=&pid=ImgRaw&r=0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="nav-container">
+        <nav class="navbar">
+            <h2>Recipe Finder</h2>
+            <div class="search">
+                <input type="search" class="search-box" placeholder="search any recipe">
+                <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="main">
+        <div class="image-box">
+            <img src="image.png" alt="">
+        </div>
+        <div class="quote-box">
+            <h4>What's on your menu today ?</h4>
+        </div>
+    </div>
+
+    <div class="recipe-details">
+        <button class="close-btn"><i class="fa-solid fa-xmark"></i></button>
+        <div class="recipe-details-content"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
